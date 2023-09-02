@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            <input type="text" name="number1" placeholder="Number1" >
+        </p>
+        <p>
+            <input type="text" name="char" placeholder="char" >
+        </p>
+        <p>
+            <input type="text" name="number2" placeholder="Number2" >
+        </p>
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div>
+        <p>Result = {{ result }}</p>
+    </div>
+</body>
+</html>
